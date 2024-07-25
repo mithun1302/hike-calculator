@@ -6,7 +6,13 @@ const Home = () => {
         <div className='input-box'>
         <input type='number' placeholder='Enter Salary'/>
         <input type='number' placeholder='Enter Percentage'/>
-        <button onSubmit={alert('Button Clicked!!!')}>Calculate</button>
+        <button onSubmit={() =>console.log('Button1 Clicked!!!')}>Calculate</button>
+        </div>
+
+        <div className='input-box'>
+        <input type='number' placeholder='Enter Previous Salary'/>
+        <input type='number' placeholder='Enter Current Salary'/>
+        <button onSubmit={() => console.log('Button2 Clicked!!!')}>Calculate</button>
         </div>
     </div>
   )
